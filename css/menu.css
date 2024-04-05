@@ -89,6 +89,7 @@
   position: relative;
   height: 20px;
   object-fit: cover;
+  cursor: pointer;
 }
 .popular,
 .title1 {
@@ -749,6 +750,7 @@
   font-family: inherit;
 }
 .logo {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -761,6 +763,7 @@
   height: 20px;
   overflow: hidden;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .calendar,
 .home {

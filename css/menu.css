@@ -8,6 +8,18 @@
     transform: scale(0.5);
   }
 }
+
+/* Default link styles */
+a {
+  color: #ff571a; /* Link color (blue) */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect */
+a:hover {
+  cursor: pointer; /* Underline on hover */
+}
+
 .instance-child {
   position: absolute;
   height: 100%;

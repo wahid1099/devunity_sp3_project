@@ -11,8 +11,8 @@
 
 /* Default link styles */
 a {
-  color: #ff571a; /* Link color (blue) */
-  text-decoration: none; /* Remove underline */
+  color: #ff571a !important; /* Link color (blue) */
+  text-decoration: none !important; /* Remove underline */
 }
 
 /* Hover effect */

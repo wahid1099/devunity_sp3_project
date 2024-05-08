@@ -8,9 +8,10 @@ set new password
 messenger
 Profile
 Edit Profile
+Notifications
 
 Remaining Pages:
-Notifications
+
 Groups
 Post Details
 Calender

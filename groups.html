@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/groups.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">Events</div>
+        <div class="menu">
+          <div class="menu-item active">Dashboard</div>
+          <div class="menu-item">Calendar</div>
+          <div class="menu-item">Feedback</div>
+        </div>
+        <div class="upcoming-event">
+          <div class="event-time">8:45 AM - 10:45 AM</div>
+          <div class="event-details">
+            <span>Meeting with Prash...</span>
+            <button>Go to meet link</button>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="header">
+          <div class="date-selector">
+            <button>Today</button>
+            <input type="date" value="2024-07-17" />
+            <select>
+              <option value="IST">7:10 PM IST</option>
+            </select>
+            <button><</button>
+            <button>This week</button>
+            <button>></button>
+            <button class="add-event">+ Add event</button>
+          </div>
+        </div>
+        <div class="overview">
+          <div class="overview-item">
+            <div class="number">12</div>
+            <div class="label">Upcoming Events</div>
+          </div>
+          <div class="overview-item">
+            <div class="number">3</div>
+            <div class="label">Meetings</div>
+          </div>
+          <div class="overview-item">
+            <div class="number">12</div>
+            <div class="label">Meeting Done!!</div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <h2>Weekly Meetings Overview</h2>
+        <div class="weekly-meetings">
+          <div class="meeting-card">
+            <div class="status green"></div>
+            <div class="details">
+              <span>Brainstorming session</span>
+              <span>12:30 PM - 04:36 PM IST (7H Left)</span>
+              <span
+                >XYZ Street, New York, America
+                <a href="#">(Get location)</a></span
+              >
+              <span>Weather information</span>
+            </div>
+          </div>
+          <div class="meeting-card">
+            <div class="status green"></div>
+            <div class="details">
+              <span>Brainstorming session</span>
+              <span>12:30 PM - 04:36 PM IST (7H Left)</span>
+              <span
+                >XYZ Street, New York, America
+                <a href="#">(Get location)</a></span
+              >
+              <span>Weather information</span>
+            </div>
+          </div>
+          <div class="meeting-card">
+            <div class="status green"></div>
+            <div class="details">
+              <span>Brainstorming session</span>
+              <span>12:30 PM - 04:36 PM IST (7H Left)</span>
+              <span
+                >XYZ Street, New York, America
+                <a href="#">(Get location)</a></span
+              >
+              <span>Weather information</span>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+
+        <h2>Upcoming Interviews</h2>
+        <div class="upcoming-interviews">
+          <div class="interview-card">
+            <span>AV 121</span>
+            <span>Avianca</span>
+            <span>Business</span>
+            <span>18 Feb 2023</span>
+            <span>23:45</span>
+          </div>
+          <div class="interview-card">
+            <span>AV 121</span>
+            <span>Avianca</span>
+            <span>Business</span>
+            <span>18 Feb 2023</span>
+            <span>23:45</span>
+          </div>
+          <div class="interview-card">
+            <span>AV 121</span>
+            <span>Avianca</span>
+            <span>Business</span>
+            <span>18 Feb 2023</span>
+            <span>23:45</span>
+          </div>
+        </div>
+        <br />
+        <br />
+        <h2>Meetings Proposals</h2>
+        <div class="meetings-proposals">
+          <div class="proposal-card">
+            <div class="status green"></div>
+            <div class="details">
+              <span>Brainstorming session</span>
+              <span>12:30 PM - 04:36 PM IST (Free Slot)</span>
+              <button>Accept</button>
+              <button>Reject</button>
+            </div>
+          </div>
+          <div class="proposal-card">
+            <div class="status red"></div>
+            <div class="details">
+              <span>Brainstorming session</span>
+              <span>12:30 PM - 04:36 PM IST (Not Free)</span>
+              <button>Accept</button>
+              <button>Reject</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      fetch("components/menu.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("menu-container").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
